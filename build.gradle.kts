@@ -8,6 +8,9 @@ version = "1.0"
 repositories {
     mavenCentral()
 }
-dependencies {
-    implementation("org.jetbrains:annotations:20.1.0")
+
+tasks.jar {
+    manifest {
+        attributes["Main-Class"] = "xyz.mrsherobrine.naml.Scan"
+    }
 }

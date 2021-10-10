@@ -2,20 +2,21 @@ package xyz.mrsherobrine.naml;
 
 public class Token {
 
-    private final NamlValue value;
     private final TokenType type;
+    private final Object value;
 
-    public Token(final NamlValue value, final TokenType type) {
-        this.value = value;
+    public Token(final TokenType type, final Object value) {
         this.type= type;
-    }
-
-    public NamlValue getValue() {
-        return value;
+        this.value = value;
+        System.out.println(type + " " + value);
     }
 
     public TokenType getType() {
         return type;
+    }
+
+    public Object getValue() {
+        return value;
     }
 
 }
