@@ -1,4 +1,4 @@
-package xyz.mrsherobrine.naml;
+package xyz.mrsherobrine.naml.token;
 
 public class Token {
 
@@ -8,7 +8,6 @@ public class Token {
     public Token(final TokenType type, final Object value) {
         this.type= type;
         this.value = value;
-        System.out.println(type + " " + value);
     }
 
     public TokenType getType() {
@@ -17,6 +16,11 @@ public class Token {
 
     public Object getValue() {
         return value;
+    }
+
+    @Override
+    public String toString() {
+        return "Token( "+type+", "+value+" )";
     }
 
 }

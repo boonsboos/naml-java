@@ -1,11 +1,10 @@
-package xyz.mrsherobrine.naml;
+package xyz.mrsherobrine.naml.token;
 
 public enum TokenType {
 
     BLOCK_OPEN,     // {
     BLOCK_CLOSE,   // }
-    DECLARATION,   // =
-    VALUE_NAME,
+    KEY,
     DOUBLE,
     INTEGER,
     STRING,
